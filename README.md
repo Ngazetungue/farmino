@@ -42,6 +42,10 @@
 2. Billing
 * Farmer module
 This module contains the list of the farmers that register their livestock and also the number of their livestock.
+
+<img width="1403" alt="Screenshot 2022-10-14 at 5 59 47 PM" src="https://user-images.githubusercontent.com/10814039/195890168-f01c5652-dab0-4f02-b0b0-68df8f124dfa.png">
+
 * Billing module
-This module contains all the necessary information about the farmer, and this is why the business logic is happening. The discount is given to the farmers once they register more than five livestock; otherwise, they won’t get a discount.
+This module contains all the necessary information about the farmer, and this is why the business logic is happening. The discount is given to the farmers once they register more than five livestock; otherwise, they won’t get a discount.<img width="1403" alt="Screenshot 2022-10-14 at 6 00 11 PM" src="https://user-images.githubusercontent.com/10814039/195890422-f85893f2-edb3-4542-bc1f-53f4c7beeeeb.png">
+
 

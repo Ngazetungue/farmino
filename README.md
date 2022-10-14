@@ -9,6 +9,13 @@
 * Implementation of pagination for all the list views across the application.
 * Ability to calculate the Bill of the farmer 
 * Ability to calculate farmer discount if they register more than five livestocks
+
+# Features to be added soon
+* More and complex business logic will be written. I have to increase my skills as much as i can
+* Ability to search
+* Ability to send message to the farmer with email
+* Nofification bell will be added next to login to show upcoming notification to the staff/administrators
+
 #Prerequisites
 * Use requirements.txt file to install all required packages
 * Any Editor (Preferably VS Code or Sublime Text)
@@ -22,7 +29,11 @@
 * python -m venv venv
 * source venv/bin/activate
 * pip install -r requirements.txt
-* python manage.py migrate
+* python manage.py makemigrations users (first ) 
+* python manage.py migrate users
+* python manage.py makemigrations farmer
+* python manage.py migrate farmer
+* python manager.py createsuperuser
 * python manage.py runserver
 
 # GETTING INTO THE PROJECT:
@@ -53,6 +64,6 @@ This module contains the list of the farmers that register their livestock and a
 <img width="1403" alt="Screenshot 2022-10-14 at 5 59 47 PM" src="https://user-images.githubusercontent.com/10814039/195890168-f01c5652-dab0-4f02-b0b0-68df8f124dfa.png">
 
 * Billing module
-This module contains all the necessary information about the farmer, and this is why the business logic is happening. The discount is given to the farmers once they register more than five livestock; otherwise, they won’t get a discount.<img width="1403" alt="Screenshot 2022-10-14 at 6 00 11 PM" src="https://user-images.githubusercontent.com/10814039/195890422-f85893f2-edb3-4542-bc1f-53f4c7beeeeb.png">
+This module contains all the necessary information about the farmer, and this is the fig that display the business logic happening in backend (models files). The discount is given to the farmers once they register more than five livestock; otherwise, they won’t get a discount.<img width="1403" alt="Screenshot 2022-10-14 at 6 00 11 PM" src="https://user-images.githubusercontent.com/10814039/195890422-f85893f2-edb3-4542-bc1f-53f4c7beeeeb.png">
 
 

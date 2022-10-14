@@ -11,9 +11,11 @@
 * Ability to calculate farmer discount if they register more than five livestocks
 
 # Features to be added soon
-* More and complex business logic will be written. 
+* More and complex business logic will be written.
+* Use FBV and decorator , Currently i use CBV and LoginRequiredMixin
+* Authorisation and Cache
 * Ability to search
-* Ability to send message to the farmer with email
+* Ability to send message to the farmer with email i.e sendgrid and twilio for mobile.I want to include third-party apis
 * Nofification bell will be added next to logout to show upcoming notification to the staff/administrators
 
 #Prerequisites

@@ -11,10 +11,10 @@
 * Ability to calculate farmer discount if they register more than five livestocks
 
 # Features to be added soon
-* More and complex business logic will be written. I have to increase my skills as much as i can
+* More and complex business logic will be written. 
 * Ability to search
 * Ability to send message to the farmer with email
-* Nofification bell will be added next to login to show upcoming notification to the staff/administrators
+* Nofification bell will be added next to logout to show upcoming notification to the staff/administrators
 
 #Prerequisites
 * Use requirements.txt file to install all required packages

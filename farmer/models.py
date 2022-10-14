@@ -120,5 +120,3 @@ class Billing(models.Model):
 
         return s_total
 
-
-# CALCULATE ALL INVOICES AMOUNT

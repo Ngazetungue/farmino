@@ -23,7 +23,7 @@ class Client(models.Model):
     town = models.CharField("town", max_length=50, choices=TOWN)
     number_of_livestock = models.IntegerField(null=False, blank=False)
 
-    # utility fields
+    # Utility fields
     uniqueId = models.CharField(null=True, blank=True, max_length=100)
     slug = models.SlugField(max_length=500, unique=True, null=True, blank=True)
     date_submitted = models.CharField(max_length=100, null=True, blank=True)

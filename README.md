@@ -29,10 +29,11 @@
 * Livestock registration systems in Python and Django This system has a ‘Login’ page from where the administrator can login into their accounts . Fig 1.1 shows the ‘Login’ page of our project.
  <img width="446" alt="Screenshot 2022-10-14 at 2 32 50 PM" src="https://user-images.githubusercontent.com/10814039/195865131-889631e5-57f3-4bee-9f1d-a1e33ac58c00.png">
 
-*This system has a ‘Signup’ page from which the user can register into the system 
+* This system has a ‘Signup’ page from which the user can register into the system 
 . Fig 1.2 shows the ‘Signup’ page of our project.
  <img width="446" alt="Screenshot 2022-10-14 at 2 34 29 PM" src="https://user-images.githubusercontent.com/10814039/195865334-dcbc0b3b-9c77-4062-a55c-a26760cb2cab.png">
-*This system has a "Register" page from which farmers can register their livestock.  Fig 1.3 shows the "Register livestock’ page of our project.<img width="446" alt="Screenshot 2022-10-14 at 2 33 13 PM" src="https://user-images.githubusercontent.com/10814039/195865557-73779162-5b33-4ee3-a59e-377f775c4511.png">
+ 
+* This system has a "Register" page from which farmers can register their livestock.  Fig 1.3 shows the "Register livestock’ page of our project.<img width="446" alt="Screenshot 2022-10-14 at 2 33 13 PM" src="https://user-images.githubusercontent.com/10814039/195865557-73779162-5b33-4ee3-a59e-377f775c4511.png">
 
 
 

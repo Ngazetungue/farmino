@@ -15,6 +15,7 @@
 * Use FBV and decorator , Currently i use CBV and LoginRequiredMixin
 * Authorisation and Cache
 * Ability to search
+* calculate all listed billing of farmers together 
 * Ability to send message to the farmer with email i.e sendgrid and twilio for mobile.I want to include third-party apis
 * Nofification bell will be added next to logout to show upcoming notification to the staff/administrators
 

@@ -1,11 +1,12 @@
-from django.db import models
+from uuid import uuid4
+
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.template.defaultfilters import slugify
-from django.utils import timezone
 from django.urls import reverse
-from uuid import uuid4
+from django.utils import timezone
+
 
 # Create your models here.
 class Client(models.Model):
@@ -97,6 +98,7 @@ class Billing(models.Model):
 
     def get_absolute_url(self):
         return reverse("billing_detail", args=[str(self.slug)])
+    
 
     # CALCULATING FARMER BILLING
     def price_of_livestocks(self):

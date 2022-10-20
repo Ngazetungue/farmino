@@ -5,24 +5,27 @@
   <main class="main-content position-relative border-radius-lg ">
     
     <div class="container-fluid py-4">
-    
+      <div class="row">
+        
+        
+      </div>
       <div class="row">
         <div class="col-md-12 mt-4">
           <div class="card">
             <div class="card-header pb-0 px-3">
-              <h6 class="mb-0">Billing Information</h6>
+              <h6 class="mb-0">Create Farmer Billing </h6>
             </div>
             <div class="card-body pt-4 p-3">
              
-                <form action="" method="post">
-                    {% csrf_token %}
-                    {{form|crispy}}
-                    <button class="btn btn-danger btn-block" type="submit" value="delete">Delete</button>
-                  </form>
+              <form action="" method="post">
+                {% csrf_token %}
+                {{form|crispy}}
+                <button class="btn btn-primary btn-block" type="submit">Create</button>
+              </form>
             </div>
           </div>
         </div>
-        
+      
       </div>
      
     </div>

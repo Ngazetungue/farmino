@@ -12,4 +12,5 @@ class FarmerApplyForm(forms.ModelForm):
             "email",
             "town",
             "number_of_livestock",
+         
         ]

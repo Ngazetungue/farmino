@@ -24,7 +24,13 @@
                     <span class="mb-2 text-xs">Email Address: <span class="text-dark ms-sm-2 font-weight-bold">{{ billing.client.email }}</span></span>
                     <span class="text-xs">VAT Number: <span class="text-dark ms-sm-2 font-weight-bold">{{billing.uniqueId}}</span></span>
                     <span class="mb-2 text-xs">Note: <span class="text-dark ms-sm-2 font-weight-bold">{{ billing.note }}</span></span>
-                    <span class="text-xs">Invoice Status: <span class="text-dark ms-sm-2 font-weight-bold">{{billing.invoice_status}}</span></span>
+                    {% if billing.invoice_status == "PENDING" %}
+                    <span class="text-xs">Invoice Status: <span class="badge badge-sm bg-gradient-warning">{{billing.invoice_status}}</span></span>
+                    {% elif billing.invoice_status == "OVERDUE" %}
+                    <span class="text-xs">Invoice Status: <span class="badge badge-sm bg-gradient-danger">{{billing.invoice_status}}</span></span>
+                    {% elif billing.invoice_status == "PAID" %}
+                    <span class="text-xs">Invoice Status: <span class="badge badge-sm bg-gradient-success">{{billing.invoice_status}}</span></span>
+                    {% endif %}
                     <span class="mb-2 text-xs">NO.of livestock: <span class="text-dark ms-sm-2 font-weight-bold">{{ billing.client.number_of_livestock }}</span></span>
                     <span class="mb-2 text-xs">Price per livestock: <span class="text-dark ms-sm-2 font-weight-bold">{{ billing.price_per_livestock }}</span></span>
                     <span class="text-xs">Total : <span class="text-dark ms-sm-2 font-weight-bold">{{billing.price_of_livestocks}}</span></span>

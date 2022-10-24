@@ -23,6 +23,8 @@
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Town</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No. of Livestock</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Date Join</th>
+
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
@@ -47,13 +49,16 @@
                         <p class="text-xs text-secondary mb-0">{{farmer.last_name}}</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">{{farmer.email}}</span>
+                        <span class="text-secondary text-xs font-weight-bold">{{farmer.email}}</span>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">{{farmer.town}}</span>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">{{farmer.number_of_livestock}}</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{farmer.date_join}}</span>
                       </td>
                       <td class="align-middle">
                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" href="{% url 'farmer-delete' farmer.id %}"><i class="far fa-trash-alt me-2"></i>Delete</a>

@@ -27,38 +27,38 @@ class Client(models.Model):
     # Utility fields
     uniqueId = models.CharField(null=True, blank=True, max_length=100)
     slug = models.SlugField(max_length=500, unique=True, null=True, blank=True)
-    date_submitted = models.CharField(max_length=100, null=True, blank=True)
+    date_join = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
-        ordering = ["-date_submitted"]
+        ordering = ["-date_join"]
 
     def __str__(self):
         return self.first_name
 
     def save(self, *args, **kwargs):
-        if self.date_submitted is None:
-            self.date_submitted = timezone.localtime(timezone.now())
+        if self.date_join is None:
+            self.date_join = timezone.localtime(timezone.now())
         if self.uniqueId is None:
             self.uniqueId = str(uuid4()).split("-")[4]
-            self.slug = slugify("{} {}".format(self.date_submitted, self.uniqueId))
+            self.slug = slugify("{} {}".format(self.date_join, self.uniqueId))
 
-        self.slug = slugify("{} {}".format(self.date_submitted, self.uniqueId))
+        self.slug = slugify("{} {}".format(self.date_join, self.uniqueId))
         self.date_updated = timezone.localtime(timezone.now())
         super(Client, self).save(*args, **kwargs)
 
 
 class Billing(models.Model):
-    CURRENT = "CU"
+    PENDING = "PE"
     OVERDUE = "OV"
     PAID = "PD"
     INVOICE_STATUS = [
-        ("CURRENT", "Current"),
+        ("PENDING", "Pending"),
         ("OVERDUE", "Overdue"),
         ("PAID", "Paid"),
     ]
     title = models.CharField(null=True, blank=True, max_length=100)
     invoice_status = models.CharField(
-        "status", max_length=50, choices=INVOICE_STATUS, default="CURRENT"
+        "status", max_length=50, choices=INVOICE_STATUS, default="PENDING"
     )
     note = models.CharField(null=True, blank=True, max_length=100)
     price_per_livestock = models.FloatField()

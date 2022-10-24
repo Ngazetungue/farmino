@@ -40,7 +40,7 @@ def farmer_apply_view(request):
         last_name = request.POST.get("last_name")
         email = request.POST.get("email")
         town = request.POST.get("town")
-        number_of_livestock = request.POST.get("number_of_livestock")
+        number_of_livestock = request.POST.get("number_of_livestock") 
 
         if form.is_valid():
             farmer = Client()

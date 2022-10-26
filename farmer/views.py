@@ -9,7 +9,7 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from .forms import FarmerApplyForm
 from .models import Billing, Client
 
-# Create your views here.
+# Create your views here
 
 
 class HomePageView(LoginRequiredMixin, TemplateView):

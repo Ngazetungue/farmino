@@ -72,7 +72,7 @@ class FarmerDeleteView(LoginRequiredMixin, DeleteView):
 
 class BillingCreateView(LoginRequiredMixin, CreateView):
     model = Billing
-    template_name = "farmer/pages/billing_create.html"
+    tenplate_name = "farmer/pages/billing_create.html"
     success_url = reverse_lazy("billing")
     fields = [
         "title",
@@ -82,7 +82,28 @@ class BillingCreateView(LoginRequiredMixin, CreateView):
         "discount_price",
         "client",
     ]
+"""def billing_create(request):
+    if request.method =="POST":
+        form = FarmerApplyForm(request.POST)
+        title = request.POST.get("title")
+        invoice_status = request.POST.get("invoice_status")
+        note = request.POST.get("note")
+        price_per_livestock = request.POST.get("price_per_livestock")
+        discount_price = request.POST.get("discount_price")
+        client = request.POST.get("client")
 
+        if form.is_valid():
+            billing_create = Billing()
+            billing_create.title = title
+            billing_create.invoice_status=invoice_status
+            billing_create.note = note
+            billing_create.price_per_livestock=price_per_livestock
+            billing_create.discount_price = discount_price
+            billing_create.client = client
+
+            return render()
+
+"""
 
 class BillingListView(LoginRequiredMixin, ListView):
     model = Billing

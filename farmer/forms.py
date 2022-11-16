@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Client
+from .models import Client, Billing
 
 
 class FarmerApplyForm(forms.ModelForm):
@@ -12,5 +12,18 @@ class FarmerApplyForm(forms.ModelForm):
             "email",
             "town",
             "number_of_livestock",
-         
         ]
+
+
+"""class CreateBillingForm(forms.ModelForm):
+    class Meta:
+        model = Billing
+        fields = [
+            "title",
+            "invoice_status",
+            "note",
+            "price_per_livestock",
+            "discount_price",
+            "client",
+        ]
+"""
